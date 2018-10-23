@@ -49,12 +49,12 @@ def help():
           "Comando rm -> deletar um arquivo do repositório local\n" \
           "Comando init -> criar e entrar em um repositorio\n" \
           "Comando status -> mostra o estado atual do repositorio local\n" \
-          "Comando add -> adiciona um arquivo modificado para a área de embarque\n" \
+           "Comando add -> adiciona um arquivo modificado para a área de embarque\n" \
           "Comando reset -> retira um arquivo modificado para a área de embarque\n" \
           "Comando commit -> manda as modificações dos arquivos que estavam na área de embarque para o repositorio\n" \
           "Comando log -> lista todos os commits feitos no repositório\n" \
           "Comando create repo -> cria repositório fora do repositorio atual\n"\
-          "Comando change repo -> muda de repositório local"
+          "Comando change repo -> muda de repositório local\n"\
           "Comando remote add -> escolhe um dos repositorio para ser o remoto \n" \
           "Comando exit -> sai da aplicação")
 
