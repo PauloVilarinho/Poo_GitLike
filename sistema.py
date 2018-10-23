@@ -110,3 +110,5 @@ class Sistema :
     @rep_local_linkado
     def log(self):
         self.rep_local.log()
+
+    #TODO criar os comandos de interação com o remoto pull push e clone

@@ -1,7 +1,7 @@
 from datetime import datetime
 
 class Arquivo:
-
+    #TODO adicionar um possivel editor de texto para editar os arquivos e fazer algo mais parecido com o git
     def __init__(self,nome):
         self.nome = nome
         self.linhas = []
@@ -104,6 +104,7 @@ class Repositorio:
             raise NameError("Arquivo com esse nome não existe")
 
     def deletar_arquivo(self,nome):
+        ##TODO deixar possivel o git trackear arquivos deletados para serem commitados
         if nome in [a.nome for a in self.arquivos]:
             for arq in self.arquivos :
                 if arq.nome == nome :
