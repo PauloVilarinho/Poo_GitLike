@@ -20,6 +20,8 @@ def acao(sistema,comando):
         sistema.criar_arquivo()
     if comando == "ls" :
         sistema.listar_arquivos_locais()
+    if comando == "rm" :
+        sistema.deletar_arquivo()
     if comando == "status":
         sistema.status()
     if comando == "add":
@@ -44,6 +46,7 @@ def acao(sistema,comando):
 def help():
     print("Comando touch -> criar um arquivo vazio\n"\
           "Comando ls -> listar arquivos do repositorio local\n" \
+          "Comando rm -> deletar um arquivo do repositório local\n" \
           "Comando init -> criar e entrar em um repositorio\n" \
           "Comando status -> mostra o estado atual do repositorio local\n" \
           "Comando add -> adiciona um arquivo modificado para a área de embarque\n" \

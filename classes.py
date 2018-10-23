@@ -103,6 +103,14 @@ class Repositorio:
         else :
             raise NameError("Arquivo com esse nome não existe")
 
+    def deletar_arquivo(self,nome):
+        if nome in [a.nome for a in self.arquivos]:
+            for arq in self.arquivos :
+                if arq.nome == nome :
+                    self.arquivos.remove(arq)
+        else :
+            raise NameError("Arquivo com esse nome não existe")
+
     def listar(self):
         for arq in self.arquivos:
             print(arq)

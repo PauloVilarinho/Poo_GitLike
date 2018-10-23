@@ -89,6 +89,11 @@ class Sistema :
         self.rep_local.criar_arquivo(nome)
 
     @rep_local_linkado
+    def deletar_arquivo(self):
+        nome = input("Qual arquivo deve ser deletado?")
+        self.rep_local.deletar_arquivo(nome)
+
+    @rep_local_linkado
     def add(self):
         nome = input("Qual o nome do arquivo a ser Adicionado?")
         self.rep_local.add(nome)
